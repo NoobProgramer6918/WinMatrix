@@ -1,4 +1,4 @@
-# WinMatrix
+# WindowsMatrix
  cmatrix for windows
 
 ## instalation
