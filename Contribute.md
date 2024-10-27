@@ -22,6 +22,8 @@ https://github.com/NoobProgramer6918/WinMatrix
    4. in target directory paste in the directory you want WinMatrix cloned into
 
    5. and you're done
+to test the code install a c++ compiler like gcc/g++ or clang/clang++
+
    
 
 
