@@ -1,9 +1,9 @@
 #include <iostream>
 #include <unistd.h>
 #include <windows.h>
-#include <random.h>
-
+#include <random>
 
 int main() {
   
 }
+
