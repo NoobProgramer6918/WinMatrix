@@ -17,7 +17,7 @@ method 2:
 2. click the "clone repository" button
 3. in source location paste in
 ```
-https://github.com/NoobProgramer6918/WinMatrix
+https://github.com/NoobProgramer6918/WindowsMatrix
 ```
    4. in target directory paste in the directory you want WindowsMatrix cloned into
 
