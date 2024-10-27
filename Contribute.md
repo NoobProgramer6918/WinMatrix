@@ -13,9 +13,9 @@ method 2:
 1. install git
 2. clone the repo
    you can do this by using git gui
-   1. open git gui
-   2. click the "clone repository" button
-   3. in source location paste in
+1. open git gui
+2. click the "clone repository" button
+3. in source location paste in
 ```
 https://github.com/NoobProgramer6918/WinMatrix
 ```
