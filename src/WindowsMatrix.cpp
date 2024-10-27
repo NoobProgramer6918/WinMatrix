@@ -7,7 +7,7 @@ std::random_device rd;  // Seed for the random number engine
 std::mt19937 gen(rd());
 std::uniform_int_distribution<> distr(0, 9);
 
-class WinMatrix {
+class WindowsMatrix {
   public:
   const int Max_trailLEN = 6; // maximum trail lenght
 
@@ -20,5 +20,5 @@ class WinMatrix {
 };
 
 int main() {
-  WinMatrix matrix;
+  WindowsMatrix matrix;
 }
