@@ -7,7 +7,7 @@ std::random_device rd;  // Seed for the random number engine
 std::mt19937 gen(rd());
 std::uniform_int_distribution<> distr(0, 9);
 
-class WinMatrix {
+class W_Matrix {
   public:
   const int Max_trailLEN = 6; // maximum trail lenght
 
@@ -22,10 +22,6 @@ class WinMatrix {
 void get_consoleSize(int &width, int &height);
 
 int main() {
-<<<<<<< Updated upstream:src/WinMatrix.cpp
-  WinMatrix matrix;
-}
-=======
   W_Matrix Wmatrix;
 
   
@@ -42,4 +38,4 @@ void get_consoleSize(int &width, int &height) {
         height = 15;
         // width and height is measured in characters not in pixels
     }
->>>>>>> Stashed changes:src/WindowsMatrix.cpp
+
