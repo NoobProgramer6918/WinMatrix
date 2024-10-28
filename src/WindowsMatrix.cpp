@@ -1,6 +1,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <windows.h>
+#include <cstdlib>
 #include <random>
 
 std::random_device rd;  // Seed for the random number engine
@@ -13,6 +14,7 @@ class W_Matrix {
   static int terminal_scaleX;
 
   const int Max_trailLEN = 6; // maximum trail lenght
+  static int* ocupied_spaces[25];
 
   const char* Trail_char1 = "@";
   const char* Trail_char2 = "#";
@@ -26,6 +28,10 @@ void getConsoleSize(int &width, int &height);
 
 int main() {
   W_Matrix Wmatrix;
+
+  W_Matrix::ocupied_spaces[0] = 0; // value 0 means the lane is free
+
+  
 }
 
 void getConsoleSize(int &width, int &height) {
