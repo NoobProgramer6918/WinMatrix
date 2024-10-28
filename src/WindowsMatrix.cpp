@@ -7,8 +7,11 @@ std::random_device rd;  // Seed for the random number engine
 std::mt19937 gen(rd());
 std::uniform_int_distribution<> distr(0, 9);
 
-class WindowsMatrix {
+class W_Matrix {
   public:
+  static int terminal_scaleY;
+  static int terminal_scaleX;
+
   const int Max_trailLEN = 6; // maximum trail lenght
 
   const char* Trail_char1 = "@";
@@ -20,5 +23,12 @@ class WindowsMatrix {
 };
 
 int main() {
-  WindowsMatrix matrix;
+  W_Matrix Wmatrix;
+
+  CONSOLE_SCREEN_BUFFER_INFO csbi;
+
+  
+  GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
+  W_Matrix::terminal_scaleX = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+  W_Matrix::terminal_scaleY = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
 }
