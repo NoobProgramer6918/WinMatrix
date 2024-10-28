@@ -24,11 +24,4 @@ class W_Matrix {
 
 int main() {
   W_Matrix Wmatrix;
-
-  CONSOLE_SCREEN_BUFFER_INFO csbi;
-
-  
-  GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
-  W_Matrix::terminal_scaleX = csbi.srWindow.Right - csbi.srWindow.Left + 1;
-  W_Matrix::terminal_scaleY = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
 }
