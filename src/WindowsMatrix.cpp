@@ -22,6 +22,21 @@ class W_Matrix {
   const char* Trail_char6 = "-";
 };
 
+void getConsoleSize(int &width, int &height);
+
 int main() {
   W_Matrix Wmatrix;
+}
+
+void getConsoleSize(int &width, int &height) {
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    if (GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi)) {
+        width = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+        height = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
+    } else {
+        // If we fail to get the size, we can set a default or handle the error.
+        width = 25;
+        height = 20;
+        // size measurment is in characters
+    }
 }
