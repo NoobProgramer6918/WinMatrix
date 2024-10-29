@@ -3,6 +3,7 @@
 #include <windows.h>
 #include <cstdlib>
 #include <random>
+using std::cout, std::endl;
 
 std::random_device rd;  // Seed for the random number engine
 std::mt19937 gen(rd());
